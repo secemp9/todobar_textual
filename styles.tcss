@@ -1,0 +1,198 @@
+/* statusbar_textual/styles.tcss */
+
+.hidden {
+  display: none;
+}
+
+Screen {
+  background: $background;
+  color: $foreground;
+}
+
+Button {
+  min-width: 0;
+}
+
+#collapsed_view {
+  height: auto;
+  padding: 0 1;
+}
+
+#collapsed_row Button {
+  margin-right: 1;
+}
+
+#collapsed_row Button:last-child {
+  margin-right: 0;
+}
+
+#expanded_view {
+  height: 100%;
+  width: 100%;
+}
+
+#login_root, #connected_root, #notconnected_root {
+  height: 100%;
+  width: 100%;
+  padding: 1 1;
+}
+
+#login_sidebar, #connected_sidebar {
+  width: 16;
+  padding-right: 1;
+}
+
+#login_main, #connected_main {
+  width: 1fr;
+}
+
+#login_title {
+  text-style: bold;
+  padding: 0 0 1 0;
+}
+
+.login_password_row {
+  height: auto;
+  padding: 0 0;
+  content-align: left middle;
+}
+
+#login_password {
+  width: 1fr;
+}
+
+.error_text {
+  color: $error;
+}
+
+.muted {
+  color: $text-muted;
+}
+
+.big {
+  padding: 1 0;
+}
+
+.task_row {
+  padding: 0 0;
+}
+
+.task_row_inner {
+  height: auto;
+  padding: 0 0;
+  content-align: left middle;
+}
+
+.task_index {
+  width: 4;
+  color: $text-muted;
+  margin-right: 1;
+}
+
+.task_value {
+  width: 1fr;
+  margin-right: 1;
+}
+
+.task_value_input {
+  width: 1fr;
+  margin-right: 1;
+}
+
+.task_deadline_input {
+  width: 1fr;
+  margin-right: 1;
+}
+
+.task_deadline {
+  width: 1fr;
+  margin-right: 1;
+}
+
+.collapsed_deadline {
+  margin-left: 4;
+}
+
+.task_status_badge {
+  width: 12;
+  content-align: center middle;
+  margin-right: 1;
+}
+
+.task_action {
+  margin-right: 1;
+}
+
+.collapsed_main {
+  width: 1fr;
+  background: transparent;
+  border: none;
+  text-style: bold;
+  color: $foreground;
+}
+
+.pref_row {
+  padding: 1 0;
+  height: auto;
+  content-align: left middle;
+}
+
+.pref_title {
+  text-style: bold;
+  padding: 0 0 1 0;
+}
+
+.pref_value {
+  width: 24;
+  content-align: center middle;
+}
+
+.pref_slider {
+  width: 1fr;
+  height: 1;
+  padding: 0 1;
+}
+
+.btn_obsoleted {
+  background: $secondary;
+  color: #000000;
+}
+
+.btn_secondary {
+  background: $secondary;
+  color: #000000;
+}
+
+.btn_dark {
+  background: #212529;
+  color: #000000;
+}
+
+.btn_outline_secondary {
+  background: transparent;
+  color: $secondary;
+  border: solid $secondary;
+}
+
+.btn_link {
+  background: transparent;
+  color: $primary;
+  border: none;
+  text-style: underline;
+  width: 1fr;
+}
+
+.btn_nav {
+  background: transparent;
+  color: $foreground;
+  border: none;
+  text-style: bold;
+}
+
+Tab.tab-muted {
+  color: $text-muted;
+}
+
+Tab.tab-muted:hover {
+  color: $text-muted;
+}
